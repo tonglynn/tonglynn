@@ -1,12 +1,14 @@
 <picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/header-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/header-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
   <img src="assets/header-light.svg" alt="Tong Lin — AI agent engineering. Coding agents, context engineering, and evaluation." width="100%">
 </picture>
 
 <p align="center">
-  <a href="#selected-work">Selected work</a> &nbsp; / &nbsp;
-  <a href="#engineering-focus">Engineering focus</a> &nbsp; / &nbsp;
-  <a href="#more-code">More code</a>
+  <a href="#selected-work">Projects</a> &nbsp; / &nbsp;
+  <a href="#engineering-focus">Focus</a> &nbsp; / &nbsp;
+  <a href="#more-code">More</a>
 </p>
 
 I build coding agents and the systems that make their work measurable: tool runtimes, context management, permission controls, and independent evaluation.
@@ -20,6 +22,8 @@ I build coding agents and the systems that make their work measurable: tool runt
 
 <a href="https://github.com/tonglynn/MiniClaudeCode">
   <picture>
+    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/miniclaudecode-mobile-dark.svg">
+    <source media="(max-width: 600px)" srcset="assets/miniclaudecode-mobile-light.svg">
     <source media="(prefers-color-scheme: dark)" srcset="assets/miniclaudecode-dark.svg">
     <img src="assets/miniclaudecode-light.svg" alt="MiniClaudeCode — A local coding agent with deferred tools, context compression, and persistent memory. 122 release tests." width="100%">
   </picture>
@@ -35,6 +39,8 @@ An asynchronous agent runtime with **13 tools**, OpenAI-compatible and Anthropic
 
 <a href="https://github.com/tonglynn/Audit">
   <picture>
+    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/audit-mobile-dark.svg">
+    <source media="(max-width: 600px)" srcset="assets/audit-mobile-light.svg">
     <source media="(prefers-color-scheme: dark)" srcset="assets/audit-dark.svg">
     <img src="assets/audit-light.svg" alt="Audit — Offline evaluation for coding agents with task contracts, independent verification, and strategy comparisons. 53 release tests." width="100%">
   </picture>

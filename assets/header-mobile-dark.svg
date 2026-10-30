@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="268" viewBox="0 0 600 268" role="img" aria-labelledby="title desc">
+<title id="title">Tong Lin — AI agent engineering</title><desc id="desc">Reliable execution. Verifiable outcomes.</desc>
+<g font-family="Segoe UI, Arial, sans-serif"><rect width="600" height="268" rx="16" fill="#142943"/>
+<text x="34" y="89" font-size="63" font-weight="700" letter-spacing="-2" fill="#edf5ff">Tong Lin</text>
+<text x="36" y="143" font-size="33" fill="#91b9ff">AI agent engineering</text>
+<text x="36" y="192" font-size="25" fill="#b3c8df">Reliable execution.</text>
+<text x="36" y="229" font-size="25" fill="#b3c8df">Verifiable outcomes.</text>
+<circle cx="512" cy="70" r="32" fill="#233f60"/>
+<path d="M497 70h30M512 55v30" stroke="#91b9ff" stroke-width="3" stroke-linecap="round"/></g></svg>
