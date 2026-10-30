@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="324" viewBox="0 0 1200 324" role="img" aria-labelledby="title desc">
+<title id="title">Tong Lin — AI agent engineering</title><desc id="desc">Coding agents, context engineering, and evaluation. A plan, read, edit, verify loop.</desc>
+<g font-family="Segoe UI, Arial, sans-serif">
+<rect width="1200" height="324" rx="18" fill="#edf5ff"/>
+<path d="M698 0v324" stroke="#c7d9ee"/>
+<path d="M732 24h28M746 10v28M1142 292h28M1156 278v28" stroke="#c7d9ee" stroke-width="2"/>
+<text x="52" y="103" font-size="67" font-weight="700" letter-spacing="-2" fill="#17385b">Tong Lin</text>
+<text x="55" y="155" font-size="31" fill="#245bc4">AI agent engineering</text>
+<text x="55" y="204" font-size="23" fill="#4a6581">Reliable execution. Verifiable outcomes.</text>
+<text x="55" y="275" font-size="19" fill="#4a6581">Coding agents / Context engineering / Evaluation</text>
+<path d="M968 67C1097 67 1118 255 968 255C817 255 817 67 968 67Z" fill="none" stroke="#c7d9ee" stroke-width="3"/>
+<path d="M1085 97l8 15-17-1M1053 245l-17 3 7-16M852 212l-7-15 17 1M880 76l16-4-6 16" fill="#245bc4"/>
+<rect x="909" y="43" width="120" height="48" rx="10" fill="#ffffff" stroke="#c7d9ee"/><text x="969" y="74" text-anchor="middle" font-size="23" fill="#245bc4" font-weight="600">Plan</text><rect x="1040" y="137" width="120" height="48" rx="10" fill="#ffffff" stroke="#c7d9ee"/><text x="1100" y="168" text-anchor="middle" font-size="23" fill="#245bc4" font-weight="600">Read</text><rect x="909" y="231" width="120" height="48" rx="10" fill="#ffffff" stroke="#c7d9ee"/><text x="969" y="262" text-anchor="middle" font-size="23" fill="#245bc4" font-weight="600">Edit</text><rect x="778" y="137" width="120" height="48" rx="10" fill="#ffffff" stroke="#c7d9ee"/><text x="838" y="168" text-anchor="middle" font-size="23" fill="#197b75" font-weight="600">Verify</text>
+<circle cx="969" cy="162" r="29" fill="#dceafb"/>
+<path d="M955 162h28M969 148v28" stroke="#245bc4" stroke-width="2.5" stroke-linecap="round"/>
+</g></svg>

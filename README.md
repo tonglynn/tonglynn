@@ -1,32 +1,62 @@
-# Tong Lin
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
+  <img src="assets/header-light.svg" alt="Tong Lin — AI agent engineering. Coding agents, context engineering, and evaluation." width="100%">
+</picture>
 
-AI agent engineering · Python · Context engineering · Evaluation harnesses
+<p align="center">
+  <a href="#selected-work">Selected work</a> &nbsp; / &nbsp;
+  <a href="#engineering-focus">Engineering focus</a> &nbsp; / &nbsp;
+  <a href="#more-code">More code</a>
+</p>
 
-I build coding-agent tools with a focus on reliable execution, useful context, controllable permissions, and verifiable outcomes.
+I build coding agents and the systems that make their work measurable: tool runtimes, context management, permission controls, and independent evaluation.
 
-## Featured projects
+<p>
+  <code>Python</code> &nbsp; <code>AsyncIO</code> &nbsp; <code>SQLite</code> &nbsp;
+  <code>pytest</code> &nbsp; <code>Git</code> &nbsp; <code>LLM APIs</code>
+</p>
 
-### [MiniClaudeCode](https://github.com/tonglynn/MiniClaudeCode)
+## Selected work
 
-A local coding-agent CLI built with Python, AsyncIO, Rich, and SQLite, with OpenAI-compatible and Anthropic-compatible backends.
+<a href="https://github.com/tonglynn/MiniClaudeCode">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/miniclaudecode-dark.svg">
+    <img src="assets/miniclaudecode-light.svg" alt="MiniClaudeCode — A local coding agent with deferred tools, context compression, and persistent memory. 122 release tests." width="100%">
+  </picture>
+</a>
 
-- **Agent runtime:** streaming tool calls, 13 tools with deferred activation, concurrent reads, and resumable sessions.
-- **Context and memory:** four-stage compression, persistent notes, semantic side queries, and asynchronous recall.
-- **Execution controls:** five permission modes, declarative rules, dangerous-command checks, and validated edits.
-- **Audit harness:** independent verification, execution traces, failure classification, and strategy ablations.
+[![MiniClaudeCode CI](https://github.com/tonglynn/MiniClaudeCode/actions/workflows/ci.yml/badge.svg)](https://github.com/tonglynn/MiniClaudeCode/actions/workflows/ci.yml)
 
-Release checks: **122 local tests passed**, **26 offline contract/verifier checks passed**, and **one live coding task independently verified**. These are separate checks; the offline results are not a model completion benchmark.
+An asynchronous agent runtime with **13 tools**, OpenAI-compatible and Anthropic-compatible streaming, five permission modes, and resumable sessions. Four-stage compression and semantic memory recall support longer tasks.
 
-[Source and setup](https://github.com/tonglynn/MiniClaudeCode) · [Runtime design](https://github.com/tonglynn/MiniClaudeCode/blob/main/docs/design.md) · [Verification evidence](https://github.com/tonglynn/MiniClaudeCode/blob/main/VERIFICATION.md) · [中文说明](https://github.com/tonglynn/MiniClaudeCode/blob/main/docs/README.zh-CN.md)
+[Source & setup](https://github.com/tonglynn/MiniClaudeCode) · [Runtime design](https://github.com/tonglynn/MiniClaudeCode/blob/main/docs/design.md) · [Verification](https://github.com/tonglynn/MiniClaudeCode/blob/main/VERIFICATION.md) · [中文](https://github.com/tonglynn/MiniClaudeCode/blob/main/docs/README.zh-CN.md)
 
-### [Audit](https://github.com/tonglynn/Audit)
+<br>
 
-An independent **Offline Evaluation CLI for Coding Agents**, organized around task contracts, evidence collection, and multidimensional metric aggregation.
+<a href="https://github.com/tonglynn/Audit">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/audit-dark.svg">
+    <img src="assets/audit-light.svg" alt="Audit — Offline evaluation for coding agents with task contracts, independent verification, and strategy comparisons. 53 release tests." width="100%">
+  </picture>
+</a>
 
-- Runs external agents in fresh fixture copies and independently verifies their final Python implementations.
-- Collects execution traces, file changes, timing, reported usage, and four classes of failure.
-- Supports repeated strategy comparisons, incremental reports, and an optional MiniClaudeCode adapter.
+[![Audit CI](https://github.com/tonglynn/Audit/actions/workflows/ci.yml/badge.svg)](https://github.com/tonglynn/Audit/actions/workflows/ci.yml)
 
-Release checks: **53 local tests passed**, **26 offline contract checks passed**, and **one real MiniClaudeCode task independently verified**. Process telemetry is labeled agent-reported; outcome verification runs separately.
+An independent evaluation CLI built around **task contracts → evidence collection → metric aggregation**. It runs external agents in fresh fixtures, checks final implementations, records failures, and compares strategies across repeated attempts.
 
-[Source and setup](https://github.com/tonglynn/Audit) · [Contract and telemetry format](https://github.com/tonglynn/Audit/blob/main/docs/formats.md) · [Verification evidence](https://github.com/tonglynn/Audit/blob/main/VERIFICATION.md) · [CI](https://github.com/tonglynn/Audit/actions/workflows/ci.yml)
+[Source & setup](https://github.com/tonglynn/Audit) · [Contracts & telemetry](https://github.com/tonglynn/Audit/blob/main/docs/formats.md) · [Verification](https://github.com/tonglynn/Audit/blob/main/VERIFICATION.md) · [中文](https://github.com/tonglynn/Audit/blob/main/docs/README.zh-CN.md)
+
+<sub>Release evidence: both projects passed 26 reconstructed contract/verifier checks and one live coding task each. Offline contract checks are separate from model completion benchmarks; agent-reported telemetry is labeled in the evaluation reports.</sub>
+
+## Engineering focus
+
+- **Agent execution:** tool calling, asynchronous scheduling, streaming, and recoverable sessions.
+- **Context engineering:** staged compression, persistent memory, and project instructions.
+- **Evaluation:** independent outcomes, failure diagnosis, reproducible contracts, and ablation studies.
+
+## More code
+
+- [tiny-agent-harness](https://github.com/tonglynn/tiny-agent-harness) — A coding-agent harness with hidden-test evaluation and four-way ablations.
+- [Tabular classification skill](https://github.com/tonglynn/in6227-tabular-classification-skill) — A reusable data-mining workflow with automated report generation.
+
+<p align="center"><sub>Build the agent. Inspect the trace. Verify the result.</sub></p>

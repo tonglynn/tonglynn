@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="216" viewBox="0 0 1200 216" role="img" aria-labelledby="title desc">
+<title id="title">Audit</title><desc id="desc">Offline evaluation for coding agents. Task contracts  /  Independent verification  /  Strategy comparisons</desc>
+<g font-family="Segoe UI, Arial, sans-serif">
+<rect x="1" y="1" width="1198" height="214" rx="16" fill="#ffffff" stroke="#c7d9ee"/>
+<path d="M28 38v139" stroke="#197b75" stroke-width="4" stroke-linecap="round"/>
+<text x="51" y="63" font-size="37" font-weight="700" letter-spacing="-1" fill="#17385b">Audit</text>
+<text x="53" y="103" font-size="24" fill="#4a6581">Offline evaluation for coding agents.</text>
+<text x="53" y="147" font-size="21" fill="#197b75">Task contracts  /  Independent verification  /  Strategy comparisons</text>
+<text x="53" y="184" font-size="18" fill="#4a6581">Python + subprocess + pytest     |     53 release tests</text>
+<rect x="1035" y="45" width="80" height="106" rx="9" fill="#edf5ff" stroke="#c7d9ee"/><path d="M1053 68h42M1053 83h30" stroke="#c7d9ee" stroke-width="4" stroke-linecap="round"/><circle cx="1109" cy="126" r="27" fill="#ffffff" stroke="#197b75" stroke-width="2"/><path d="M1096 126l9 9 17-19" fill="none" stroke="#197b75" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
