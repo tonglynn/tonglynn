@@ -1,47 +1,55 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-compact-dark.svg">
-  <img src="assets/profile-compact-light.svg" width="100%" alt="Tong Lin — Coding agents, memory systems, and evaluation">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/cards/header-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/cards/header-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cards/header-dark.svg">
+  <img src="assets/cards/header-light.svg" width="100%" alt="Tong Lin — Coding agents, memory systems, and independent evaluation. Python, AsyncIO, MCP, SQLite.">
 </picture>
 
-I build coding agents and the infrastructure around them: asynchronous tool runtimes, evidence-backed memory, and independent evaluation. My work connects the agent that makes a change with the systems that remember and verify it.
+I build coding agents and the systems that help teams remember, inspect, and verify their work.
 
-`Python` · `AsyncIO` · `MCP` · `SQLite` · `pytest`
+## Selected work
 
-## Attest — governed memory for coding agents
+<a href="https://github.com/tonglynn/attest-agent-memory">
+  <picture>
+    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/cards/attest-mobile-dark.svg">
+    <source media="(max-width: 600px)" srcset="assets/cards/attest-mobile-light.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/cards/attest-dark.svg">
+    <img src="assets/cards/attest-light.svg" width="100%" alt="Attest: MCP memory server with an evidence gateway, scoped recall, and human review. 177 passing tests; 450 preregistered study runs; 60 synthetic attacks. One model, synthetic benchmark; limits and negative findings are public.">
+  </picture>
+</a>
 
-[![MCP server](https://img.shields.io/badge/MCP-server-255fb2)](https://github.com/tonglynn/attest-agent-memory/blob/main/docs/MCP_DEMO.md)
-[![Attest CI](https://github.com/tonglynn/attest-agent-memory/actions/workflows/ci.yml/badge.svg)](https://github.com/tonglynn/attest-agent-memory/actions/workflows/ci.yml)
+[![MCP server](https://img.shields.io/badge/MCP-server-285fa8)](https://github.com/tonglynn/attest-agent-memory/blob/main/docs/MCP_DEMO.md) [![Attest CI](https://github.com/tonglynn/attest-agent-memory/actions/workflows/ci.yml/badge.svg)](https://github.com/tonglynn/attest-agent-memory/actions/workflows/ci.yml)
 
-**Learn from code review. Recall in scope. Let people review and retract.**
+[Interactive demo](https://tonglynn.github.io/attest-agent-memory/) · [Results & limitations](https://github.com/tonglynn/attest-agent-memory/blob/main/RESULTS.md) · [Preregistered protocol](https://github.com/tonglynn/attest-agent-memory/blob/main/PREREGISTRATION.md) · [中文](https://github.com/tonglynn/attest-agent-memory/blob/main/README.zh-CN.md)
 
-[Attest](https://github.com/tonglynn/attest-agent-memory) is an MCP server that turns review feedback into reusable team knowledge. A deterministic evidence gateway checks candidate notes against verified changes; repository and version scopes govern recall, while a separate admin interface handles human decisions.
+<a href="https://github.com/tonglynn/MiniClaudeCode">
+  <picture>
+    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/cards/runtime-mobile-dark.svg">
+    <source media="(max-width: 600px)" srcset="assets/cards/runtime-mobile-light.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/cards/runtime-dark.svg">
+    <img src="assets/cards/runtime-light.svg" width="100%" alt="MiniClaudeCode: async coding-agent runtime with deferred tools, streaming, permissions, context compression, and resumable sessions. Release evidence: 122 tests, 26 offline contract checks, Windows/Ubuntu CI, one live model task.">
+  </picture>
+</a>
 
-**Open evidence:** [177 passing tests across Python 3.11–3.13](https://github.com/tonglynn/attest-agent-memory/actions/workflows/ci.yml) · [450 preregistered experiment runs](https://github.com/tonglynn/attest-agent-memory/tree/main/runs/main) · [60 synthetic attacks across six write channels](https://github.com/tonglynn/attest-agent-memory/tree/main/runs/poison_channels)
+[Runtime design](https://github.com/tonglynn/MiniClaudeCode/blob/main/docs/design.md) · [Release verification](https://github.com/tonglynn/MiniClaudeCode/blob/main/VERIFICATION.md) · [Live-run evidence](https://github.com/tonglynn/MiniClaudeCode/blob/main/evidence/live-smoke.json)
 
-The main study measured **33% → 70% first-attempt pass rate** on 11 synthetic held-out tasks, repeated three times with one model. [Results](https://github.com/tonglynn/attest-agent-memory/blob/main/RESULTS.md) distinguish the original gate from later gateways, and report tradeoffs and negative findings.
+<a href="https://github.com/tonglynn/Audit">
+  <picture>
+    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/cards/audit-mobile-dark.svg">
+    <source media="(max-width: 600px)" srcset="assets/cards/audit-mobile-light.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/cards/audit-dark.svg">
+    <img src="assets/cards/audit-light.svg" width="100%" alt="Audit: independent coding-agent evaluation with task contracts, fresh fixtures, final-code verification, and failure traces. Release evidence: 53 tests and 26 offline contract checks, plus one real MiniClaudeCode integration run.">
+  </picture>
+</a>
 
-[![Recorded Claude Desktop session: learning, evidence checks, and human review](https://raw.githubusercontent.com/tonglynn/attest-agent-memory/main/docs/assets/live_run.gif)](https://tonglynn.github.io/attest-agent-memory/)
+[Contracts & telemetry](https://github.com/tonglynn/Audit/blob/main/docs/formats.md) · [Release verification](https://github.com/tonglynn/Audit/blob/main/VERIFICATION.md) · [Integration evidence](https://github.com/tonglynn/Audit/blob/main/evidence/live-smoke.json)
 
-<sub>Recorded Claude Desktop + MCP session in a synthetic billing repository. Agent, server, and tests ran for real; review comments and approver identities were simulated.</sub>
+<sub>Release checks for MiniClaudeCode and Audit validate reconstructed fixtures and the evaluator. Each has one live model task; these are not full model benchmarks.</sub>
 
-[Interactive demo](https://tonglynn.github.io/attest-agent-memory/) · [Code & setup](https://github.com/tonglynn/attest-agent-memory) · [Preregistered protocol](https://github.com/tonglynn/attest-agent-memory/blob/main/PREREGISTRATION.md) · [中文](https://github.com/tonglynn/attest-agent-memory/blob/main/README.zh-CN.md)
+<details>
+<summary>More projects</summary>
 
-## Agent runtime & evaluation
+- [tiny-agent-harness](https://github.com/tonglynn/tiny-agent-harness) — Hidden-test evaluation and ablations.
+- [Tabular classification skill](https://github.com/tonglynn/in6227-tabular-classification-skill) — Reusable data-mining and reporting workflows.
 
-### [MiniClaudeCode](https://github.com/tonglynn/MiniClaudeCode)
-
-An asynchronous Python coding-agent runtime with deferred tools, streaming model responses, five permission modes, context compression, persistent memory, and resumable sessions.
-
-**Release verification:** [122 passing tests and 26/26 offline contract checks](https://github.com/tonglynn/MiniClaudeCode/blob/main/VERIFICATION.md). CI covers Windows and Ubuntu on Python 3.12/3.13; one live model task passed independent verification.
-
-[Runtime design](https://github.com/tonglynn/MiniClaudeCode/blob/main/docs/design.md) · [CI](https://github.com/tonglynn/MiniClaudeCode/actions/workflows/ci.yml) · [Live-run evidence](https://github.com/tonglynn/MiniClaudeCode/blob/main/evidence/live-smoke.json)
-
-### [Audit](https://github.com/tonglynn/Audit)
-
-An independent evaluation CLI: explicit task contracts, fresh fixtures, external agent execution, final-code verification, failure classification, and trace collection. Checks include timeout handling, protected-file changes, tampered verifier snapshots, and installed-wheel validation.
-
-**Release verification:** [53 passing tests and 26/26 offline contract checks](https://github.com/tonglynn/Audit/blob/main/VERIFICATION.md), plus one real MiniClaudeCode integration run. Offline contract checks validate the evaluator; they do not measure model success rate.
-
-[Contracts & telemetry](https://github.com/tonglynn/Audit/blob/main/docs/formats.md) · [CI](https://github.com/tonglynn/Audit/actions/workflows/ci.yml) · [Integration evidence](https://github.com/tonglynn/Audit/blob/main/evidence/live-smoke.json)
-
-Also: [tiny-agent-harness](https://github.com/tonglynn/tiny-agent-harness), for hidden-test evaluation and ablations; [tabular classification skill](https://github.com/tonglynn/in6227-tabular-classification-skill), for reusable data-mining and reporting workflows.
+</details>
