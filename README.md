@@ -20,6 +20,23 @@ I build coding agents and the systems that make their work measurable: tool runt
 
 ## Selected work
 
+<a href="https://github.com/tonglynn/attest-agent-memory">
+  <picture>
+    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/attest-mobile-dark.svg">
+    <source media="(max-width: 600px)" srcset="assets/attest-mobile-light.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/attest-dark.svg">
+    <img src="assets/attest-light.svg" alt="Attest — Verified, scoped, retractable memory for coding agents. 177 tests; 0/60 poisoned rules stored." width="100%">
+  </picture>
+</a>
+
+[![Attest tests](https://github.com/tonglynn/attest-agent-memory/actions/workflows/ci.yml/badge.svg)](https://github.com/tonglynn/attest-agent-memory/actions/workflows/ci.yml)
+
+Team memory for MCP coding agents that learns from code review only what a verified change actually applied. A deterministic evidence gateway approves, rejects, or holds each note for a person; notes are scoped to repository and version, and only people can approve or retract them. Held-out first-attempt pass rate **33% → 70%** in a preregistered experiment; test-passing poisoned advice stored as a rule **0/60** times.
+
+[Source & setup](https://github.com/tonglynn/attest-agent-memory) · [Live demo](https://tonglynn.github.io/attest-agent-memory/) · [Results](https://github.com/tonglynn/attest-agent-memory/blob/main/RESULTS.md) · [中文](https://github.com/tonglynn/attest-agent-memory/blob/main/README.zh-CN.md)
+
+<br>
+
 <a href="https://github.com/tonglynn/MiniClaudeCode">
   <picture>
     <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/miniclaudecode-mobile-dark.svg">
@@ -52,12 +69,13 @@ An independent evaluation CLI built around **task contracts → evidence collect
 
 [Source & setup](https://github.com/tonglynn/Audit) · [Contracts & telemetry](https://github.com/tonglynn/Audit/blob/main/docs/formats.md) · [Verification](https://github.com/tonglynn/Audit/blob/main/VERIFICATION.md) · [中文](https://github.com/tonglynn/Audit/blob/main/docs/README.zh-CN.md)
 
-<sub>Release evidence: both projects passed 26 reconstructed contract/verifier checks and one live coding task each. Offline contract checks are separate from model completion benchmarks; agent-reported telemetry is labeled in the evaluation reports.</sub>
+<sub>Release evidence for MiniClaudeCode and Audit: both passed 26 reconstructed contract/verifier checks and one live coding task each. Offline contract checks are separate from model completion benchmarks; agent-reported telemetry is labeled in the evaluation reports.</sub>
 
 ## Engineering focus
 
 - **Agent execution:** tool calling, asynchronous scheduling, streaming, and recoverable sessions.
 - **Context engineering:** staged compression, persistent memory, and project instructions.
+- **Agent memory:** verified learning, repository and version scoping, poisoning defence, and human governance.
 - **Evaluation:** independent outcomes, failure diagnosis, reproducible contracts, and ablation studies.
 
 ## More code
