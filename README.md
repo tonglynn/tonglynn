@@ -7,6 +7,8 @@ I build developer tools for coding agents, with a focus on memory, execution, an
 
 ## Attest
 
+[![MCP server](https://img.shields.io/badge/MCP-server-255fb2)](https://github.com/tonglynn/attest-agent-memory/blob/main/docs/MCP_DEMO.md)
+
 [![A recorded Claude Desktop session: learning, evidence checks, and human review](https://raw.githubusercontent.com/tonglynn/attest-agent-memory/main/docs/assets/live_run.gif)](https://tonglynn.github.io/attest-agent-memory/)
 
 <sub>Recorded with Claude Desktop and the Attest MCP server. Open the project for the interactive walkthrough.</sub>
