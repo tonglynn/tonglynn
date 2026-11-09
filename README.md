@@ -1,86 +1,29 @@
-<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/header-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/header-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-  <img src="assets/header-light.svg" alt="Tong Lin — AI agent engineering. Coding agents, context engineering, and evaluation." width="100%">
-</picture>
+# Tong Lin
 
-<p align="center">
-  <a href="#selected-work">Projects</a> &nbsp; / &nbsp;
-  <a href="#engineering-focus">Focus</a> &nbsp; / &nbsp;
-  <a href="#more-code">More</a>
-</p>
+I build developer tools for coding agents, with a focus on memory, execution, and evaluation. Most of my work is in Python.
 
-I build coding agents and the systems that make their work measurable: tool runtimes, context management, permission controls, and independent evaluation.
+## Attest
 
-<p>
-  <code>Python</code> &nbsp; <code>AsyncIO</code> &nbsp; <code>SQLite</code> &nbsp;
-  <code>pytest</code> &nbsp; <code>Git</code> &nbsp; <code>LLM APIs</code>
-</p>
+**Memory that coding agents can learn from, and people can review and retract.**
 
-## Selected work
+[Attest](https://github.com/tonglynn/attest-agent-memory) turns code-review feedback into reusable project knowledge. An evidence gateway checks proposed notes against verified changes, scopes them to the relevant repository and version, and routes uncertain notes for human review. It is available as an MCP server.
 
-<a href="https://github.com/tonglynn/attest-agent-memory">
-  <picture>
-    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/attest-mobile-dark.svg">
-    <source media="(max-width: 600px)" srcset="assets/attest-mobile-light.svg">
-    <source media="(prefers-color-scheme: dark)" srcset="assets/attest-dark.svg">
-    <img src="assets/attest-light.svg" alt="Attest — Verified, scoped, retractable memory for coding agents. 177 tests; 0/60 poisoned rules stored." width="100%">
-  </picture>
-</a>
+In a preregistered experiment, held-out first-attempt pass rate rose from **33% without memory to 70% with Attest**. This was an author-designed synthetic benchmark with one model and 11 held-out tasks, repeated three times; the results report covers the tradeoffs and later security experiments.
 
-[![Attest tests](https://github.com/tonglynn/attest-agent-memory/actions/workflows/ci.yml/badge.svg)](https://github.com/tonglynn/attest-agent-memory/actions/workflows/ci.yml)
+[Try the demo](https://tonglynn.github.io/attest-agent-memory/) · [Code & setup](https://github.com/tonglynn/attest-agent-memory) · [Results & limitations](https://github.com/tonglynn/attest-agent-memory/blob/main/RESULTS.md) · [中文](https://github.com/tonglynn/attest-agent-memory/blob/main/README.zh-CN.md)
 
-Team memory for MCP coding agents that learns from code review only what a verified change actually applied. A deterministic evidence gateway approves, rejects, or holds each note for a person; notes are scoped to repository and version, and only people can approve or retract them. Held-out first-attempt pass rate **33% → 70%** in a preregistered experiment; test-passing poisoned advice stored as a rule **0/60** times.
+## Other projects
 
-[Source & setup](https://github.com/tonglynn/attest-agent-memory) · [Live demo](https://tonglynn.github.io/attest-agent-memory/) · [Results](https://github.com/tonglynn/attest-agent-memory/blob/main/RESULTS.md) · [中文](https://github.com/tonglynn/attest-agent-memory/blob/main/README.zh-CN.md)
+### [MiniClaudeCode](https://github.com/tonglynn/MiniClaudeCode)
 
-<br>
+A local coding agent with an asynchronous Python runtime, streaming model responses, permission controls, and resumable sessions. Built to explore tool execution, context compression, and persistent memory.
 
-<a href="https://github.com/tonglynn/MiniClaudeCode">
-  <picture>
-    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/miniclaudecode-mobile-dark.svg">
-    <source media="(max-width: 600px)" srcset="assets/miniclaudecode-mobile-light.svg">
-    <source media="(prefers-color-scheme: dark)" srcset="assets/miniclaudecode-dark.svg">
-    <img src="assets/miniclaudecode-light.svg" alt="MiniClaudeCode — A local coding agent with deferred tools, context compression, and persistent memory. 122 release tests." width="100%">
-  </picture>
-</a>
+[Runtime design](https://github.com/tonglynn/MiniClaudeCode/blob/main/docs/design.md) · [Verification](https://github.com/tonglynn/MiniClaudeCode/blob/main/VERIFICATION.md)
 
-[![MiniClaudeCode CI](https://github.com/tonglynn/MiniClaudeCode/actions/workflows/ci.yml/badge.svg)](https://github.com/tonglynn/MiniClaudeCode/actions/workflows/ci.yml)
+### [Audit](https://github.com/tonglynn/Audit)
 
-An asynchronous agent runtime with **13 tools**, OpenAI-compatible and Anthropic-compatible streaming, five permission modes, and resumable sessions. Four-stage compression and semantic memory recall support longer tasks.
+A CLI for evaluating coding agents against explicit task contracts. Runs agents in fresh fixtures, checks their final implementations independently, and records failures and execution traces for comparison.
 
-[Source & setup](https://github.com/tonglynn/MiniClaudeCode) · [Runtime design](https://github.com/tonglynn/MiniClaudeCode/blob/main/docs/design.md) · [Verification](https://github.com/tonglynn/MiniClaudeCode/blob/main/VERIFICATION.md) · [中文](https://github.com/tonglynn/MiniClaudeCode/blob/main/docs/README.zh-CN.md)
+[Contracts & telemetry](https://github.com/tonglynn/Audit/blob/main/docs/formats.md) · [Verification](https://github.com/tonglynn/Audit/blob/main/VERIFICATION.md)
 
-<br>
-
-<a href="https://github.com/tonglynn/Audit">
-  <picture>
-    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/audit-mobile-dark.svg">
-    <source media="(max-width: 600px)" srcset="assets/audit-mobile-light.svg">
-    <source media="(prefers-color-scheme: dark)" srcset="assets/audit-dark.svg">
-    <img src="assets/audit-light.svg" alt="Audit — Offline evaluation for coding agents with task contracts, independent verification, and strategy comparisons. 53 release tests." width="100%">
-  </picture>
-</a>
-
-[![Audit CI](https://github.com/tonglynn/Audit/actions/workflows/ci.yml/badge.svg)](https://github.com/tonglynn/Audit/actions/workflows/ci.yml)
-
-An independent evaluation CLI built around **task contracts → evidence collection → metric aggregation**. It runs external agents in fresh fixtures, checks final implementations, records failures, and compares strategies across repeated attempts.
-
-[Source & setup](https://github.com/tonglynn/Audit) · [Contracts & telemetry](https://github.com/tonglynn/Audit/blob/main/docs/formats.md) · [Verification](https://github.com/tonglynn/Audit/blob/main/VERIFICATION.md) · [中文](https://github.com/tonglynn/Audit/blob/main/docs/README.zh-CN.md)
-
-<sub>Release evidence for MiniClaudeCode and Audit: both passed 26 reconstructed contract/verifier checks and one live coding task each. Offline contract checks are separate from model completion benchmarks; agent-reported telemetry is labeled in the evaluation reports.</sub>
-
-## Engineering focus
-
-- **Agent execution:** tool calling, asynchronous scheduling, streaming, and recoverable sessions.
-- **Context engineering:** staged compression, persistent memory, and project instructions.
-- **Agent memory:** verified learning, repository and version scoping, poisoning defence, and human governance.
-- **Evaluation:** independent outcomes, failure diagnosis, reproducible contracts, and ablation studies.
-
-## More code
-
-- [tiny-agent-harness](https://github.com/tonglynn/tiny-agent-harness) — A coding-agent harness with hidden-test evaluation and four-way ablations.
-- [Tabular classification skill](https://github.com/tonglynn/in6227-tabular-classification-skill) — A reusable data-mining workflow with automated report generation.
-
-<p align="center"><sub>Build the agent. Inspect the trace. Verify the result.</sub></p>
+Also: [tiny-agent-harness](https://github.com/tonglynn/tiny-agent-harness), for hidden-test evaluation and ablations; [tabular classification skill](https://github.com/tonglynn/in6227-tabular-classification-skill), a reusable data-mining and reporting workflow.
