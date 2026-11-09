@@ -1,8 +1,15 @@
-# Tong Lin
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-compact-dark.svg">
+  <img src="assets/profile-compact-light.svg" width="100%" alt="Tong Lin — Developer tools for coding agents">
+</picture>
 
 I build developer tools for coding agents, with a focus on memory, execution, and evaluation. Most of my work is in Python.
 
 ## Attest
+
+[![A recorded Claude Desktop session: learning, evidence checks, and human review](https://raw.githubusercontent.com/tonglynn/attest-agent-memory/main/docs/assets/live_run.gif)](https://tonglynn.github.io/attest-agent-memory/)
+
+<sub>Recorded with Claude Desktop and the Attest MCP server. Open the project for the interactive walkthrough.</sub>
 
 **Memory that coding agents can learn from, and people can review and retract.**
 
